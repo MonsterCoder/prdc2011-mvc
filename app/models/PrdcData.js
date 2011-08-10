@@ -2,18 +2,13 @@ Ext.regModel('Speaker', {
     fields: ['name']
 });
 
-speakerStore = new Ext.data.Store({
-    model: 'Speaker',
-
-    proxy: {
-        type: 'ajax',
-        url : 'http://localhost/Prdc-mvc/app/models/dummydata.js',
+speakerStore =  new Ext.data.JsonPStore({    
+        model: 'Speaker',                  
+        url: 'http://prdc.heroku.com/speakers.js',                   
         reader: {
             type: 'json',
             root: 'speakers'
-        }
-
-    } 
-});
-
+        } ,            
+        autoLoad: true 
+    }); 
 
