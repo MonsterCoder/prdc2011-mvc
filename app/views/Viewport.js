@@ -11,11 +11,11 @@ prdc.views.Viewport = Ext.extend(Ext.Panel, {
     initComponent: function() {
 
         Ext.apply(prdc.views, {
-        		prdcMenu: new prdc.views.PrdcMenu()
+        		speakers: new prdc.views.Speakers()
         });
   
         Ext.apply(this, {
-            items: [prdc.views.prdcMenu]
+            items: [prdc.views.speakers]
         });
         
         prdc.views.Viewport.superclass.initComponent.apply(this, arguments);
