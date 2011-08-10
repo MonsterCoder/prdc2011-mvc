@@ -17,3 +17,5 @@ prdc.views.Speakers = Ext.extend(Ext.Panel, {
     }
 });
 
+ Ext.reg('speakers', prdc.views.Speakers); 
+

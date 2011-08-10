@@ -1,4 +1,4 @@
-prdc.views.Viewport = Ext.extend(Ext.Panel, {
+prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
     tabBar: {
                 dock: 'bottom',
                 layout: {
@@ -9,13 +9,20 @@ prdc.views.Viewport = Ext.extend(Ext.Panel, {
     layout: 'card',
     cardSwitchAnimation: 'slide',
     initComponent: function() {
-
         Ext.apply(prdc.views, {
         		speakers: new prdc.views.Speakers()
         });
-  
+        
+         var  speakersTab = {
+                title: 'Speakers',  
+                scroll: 'vertical',
+                iconCls: 'user',
+                xtype: 'speakers'
+            };
+
+ 
         Ext.apply(this, {
-            items: [prdc.views.speakers]
+            items: [speakersTab]
         });
         
         prdc.views.Viewport.superclass.initComponent.apply(this, arguments);
