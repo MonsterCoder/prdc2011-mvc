@@ -1,5 +1,5 @@
 Ext.regModel('Speaker', {
-    fields: ['name']
+    fields: ['bio', "blog", "email","id","location","name","picture","twitter","website"]
 });
 
 speakerStore =  new Ext.data.JsonPStore({    

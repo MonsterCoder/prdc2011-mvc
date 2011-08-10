@@ -7,7 +7,7 @@ prdc.views.PrdcMenu = Ext.extend(Ext.Panel, {
     items: [{
         xtype: 'list',
         store: speakerStore,
-        itemTpl : 'Name: {name}',
+        itemTpl : '<span>{name}</span> <p>{bio}</p>',
         scroll: 'vertical',
         fullscreen: true
     }],
