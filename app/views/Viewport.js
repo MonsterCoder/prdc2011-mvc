@@ -17,12 +17,25 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
                 title: 'Speakers',  
                 scroll: 'vertical',
                 iconCls: 'user',
-                xtype: 'speakers'
+                xtype:'speakers'
+               
+         };
+         
+         var sessionsTab = {
+                title: 'Sessions',
+                iconCls: 'time',
+    			scroll: 'vertical'
+            };
+            
+       var tweetsTab = {
+                 title: 'Tweets',
+                 iconCls: 'team',
+                 hashtag: this.twitterSearch
             };
 
- 
+
         Ext.apply(this, {
-            items: [speakersTab]
+            items: [speakersTab, sessionsTab, tweetsTab]
         });
         
         prdc.views.Viewport.superclass.initComponent.apply(this, arguments);

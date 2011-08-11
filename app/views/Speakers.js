@@ -7,7 +7,7 @@ prdc.views.Speakers = Ext.extend(Ext.Panel, {
     items: [{
         xtype: 'list',
         store: speakerStore,
-        itemTpl : '<span>{name}</span> <p>{bio}</p>',
+        itemTpl : prdc.views.Templates.speakerItem,
         scroll: 'vertical',
         fullscreen: true
     }],
