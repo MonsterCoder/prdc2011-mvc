@@ -22,6 +22,15 @@ prdc.views.session.List = Ext.extend(Ext.Panel, {
     }],
 
     initComponent: function() {
+
+		sessionStore.clearFilter();
+		if (this.filter){
+						    for(var field in this.filter){
+							sessionStore.filter(field,this.filter[field],true);
+							}
+							
+		}
+		
         prdc.views.session.List.superclass.initComponent.apply(this, arguments);        
     }
 });

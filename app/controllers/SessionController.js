@@ -1,6 +1,9 @@
 prdc.controllers.SessionController = new Ext.Controller ({
 	Index: function(param){
-		alert(param.speakerId);
+		var speakerid = param.speakerId;
+	    var d = new	prdc.views.session.List({filter:{'speakers':/\b49\b/}});
+		d.filter ={'speaker':new RegExp('/\b'+speakerid+'\b/')};
+		prdc.views.viewport.setActiveItem(d, 'slide');
 	},
 	
 	Show: function(param) {
