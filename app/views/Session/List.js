@@ -12,7 +12,7 @@ prdc.views.session.List = Ext.extend(Ext.Panel, {
         scroll: 'vertical',
 		onItemDisclosure: function (item) {
             Ext.dispatch({
-                controller: prdc.controllers.SssionController,
+                controller: prdc.controllers.SessionController,
                 action: 'Show',
 				selecteditem: item
             });

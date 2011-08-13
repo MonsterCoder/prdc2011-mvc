@@ -1,13 +1,13 @@
-Ext.regModel('Speaker', {
-    fields: ['bio', "blog", "email","id","location","name","picture","twitter","website"]
+Ext.regModel('Session', {
+    fields: ['abstract', "id", "speakers","tags","title"]
 });
 
-speakerStore =  new Ext.data.JsonPStore({    
-        model: 'Speaker',                  
-        url: 'http://prdc.heroku.com/speakers.js',                   
+sessionStore =  new Ext.data.JsonPStore({    
+        model: 'Session',                  
+        url: 'http://prdc.heroku.com/sessions.js',                   
         reader: {
             type: 'json',
-            root: 'speakers'
+            root: 'sessions'
         } ,            
         autoLoad: true 
     }); 

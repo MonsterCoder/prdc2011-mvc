@@ -20,7 +20,8 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
          var sessionsTab = {
                 title: 'Sessions',
                 iconCls: 'time',
-    			scroll: 'vertical'
+    			scroll: 'vertical',
+				xtype: 'sessions'
             };
             
        var tweetsTab = {
