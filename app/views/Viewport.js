@@ -9,15 +9,11 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
     layout: 'card',
     cardSwitchAnimation: 'slide',
     initComponent: function() {
-        Ext.apply(prdc.views, {
-        		speakers: new prdc.views.Speakers()
-        });
-        
          var  speakersTab = {
                 title: 'Speakers',  
                 scroll: 'vertical',
                 iconCls: 'user',
-                xtype:'speakers'
+				xtype: 'speakers'
                
          };
          
