@@ -11,10 +11,13 @@ prdc.controllers.SessionController = new Ext.Controller ({
 	
 	Show: function(param) {
 				session = param.selecteditem.data;
-				detail = new prdc.views.session.Show({
+				Ext.apply(prdc.views.sessionDetail, {
 					prevCard: this.listpanel,
 					record: session
 				});
-				prdc.views.viewport.setActiveItem(detail, 'slide');
+
+				prdc.views.sessionDetail.update(session);
+				
+				prdc.views.viewport.getActiveItem().setActiveItem(1);
 	}
 });

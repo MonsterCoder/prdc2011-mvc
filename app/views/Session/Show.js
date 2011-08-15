@@ -12,10 +12,7 @@ prdc.views.session.Show = Ext.extend(Ext.Panel, {
 							this.ownerCt.setActiveItem(this.prevCard, {
 								type: 'slide',
 								reverse: true,
-								scope: this,
-								after: function(){
-									this.destroy();
-								}
+								scope: this
 							});
 						}
 			}]
