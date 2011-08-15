@@ -13,8 +13,9 @@ prdc.views.speaker.List = Ext.extend(Ext.Panel, {
 					Ext.dispatch({
 						controller: prdc.controllers.SpeakerController,
 						action: 'Show',
-						selecteditem: item
-					});
+						selecteditem: item,
+						tabcard: prdc.views.speakersView.ownerCt
+					});	
 				},
 
 				fullscreen: true

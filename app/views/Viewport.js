@@ -22,6 +22,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
     initComponent: function() {
 		Ext.apply(prdc.views, {
 			speakersView: new prdc.views.speaker.List(),
+			speakerDetail: new prdc.views.speaker.Show(),
 			sessionsView: new prdc.views.session.List()
 		});
 		
@@ -31,7 +32,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
                 iconCls: 'user',
 				layout: 'card',
 				controller: prdc.controllers.SpeakerController,
-				items: [ prdc.views.speakersView]
+				items: [ prdc.views.speakersView, prdc.views.speakerDetail]
          };
          
          var sessionsTab = {
