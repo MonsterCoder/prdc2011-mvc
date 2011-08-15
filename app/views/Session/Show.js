@@ -24,3 +24,5 @@ prdc.views.session.Show = Ext.extend(Ext.Panel, {
         prdc.views.session.Show.superclass.initComponent.call(this);
     }
 });
+
+Ext.reg('sessondetail', prdc.views.session.Show);

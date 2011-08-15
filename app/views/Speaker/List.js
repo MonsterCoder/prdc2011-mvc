@@ -23,8 +23,7 @@ prdc.views.speaker.List = Ext.extend(Ext.Panel, {
 
     initComponent: function() {
         prdc.views.speaker.List.superclass.initComponent.apply(this, arguments);        
-    },
-	controller: prdc.views.speaker.List
+    }
 });
 
  Ext.reg('speakers', prdc.views.speaker.List); 

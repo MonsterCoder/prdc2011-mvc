@@ -27,7 +27,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 			sessionDetail: new prdc.views.session.Show()
 		});
 		
-         var  speakersTab = {
+         this.speakersTab = {
                 title: 'Speakers',  
                 scroll: 'vertical',
                 iconCls: 'user',
@@ -36,22 +36,23 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 				items: [ prdc.views.speakersView, prdc.views.speakerDetail]
          };
          
-         var sessionsTab = {
+        this.sessionsTab = {
                 title: 'Sessions',
                 iconCls: 'time',
     			scroll: 'vertical',
+				layout: 'card',
 				controller: prdc.controllers.SessionController,
 				items: [ prdc.views.sessionsView, prdc.views.sessionDetail]
             };
             
-       var tweetsTab = {
+       this.tweetsTab = {
                  title: 'Tweets',
                  iconCls: 'team',
                  hashtag: this.twitterSearch
             };
 
         Ext.apply(this, {
-            items: [speakersTab, sessionsTab, tweetsTab]
+            items: [this.speakersTab, this.sessionsTab, this.tweetsTab]
         });
         prdc.views.Viewport.superclass.initComponent.apply(this, arguments);
 
