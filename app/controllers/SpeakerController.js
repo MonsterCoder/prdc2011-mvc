@@ -5,7 +5,11 @@ prdc.controllers.SpeakerController = new Ext.Controller({
 			
 			Show: function(param) {
 				speaker = param.selecteditem.data;
-				prdc.views.speakerDetail.prevCard = this.listpanel;
+				Ext.apply(prdc.views.speakerDetail, {
+					prevCard: this.listpanel,
+					record: speaker
+				});
+
 				prdc.views.speakerDetail.update(speaker);
 				
 				param.tabcard.setActiveItem(1);

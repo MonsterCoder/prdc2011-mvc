@@ -23,7 +23,8 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 		Ext.apply(prdc.views, {
 			speakersView: new prdc.views.speaker.List(),
 			speakerDetail: new prdc.views.speaker.Show(),
-			sessionsView: new prdc.views.session.List()
+			sessionsView: new prdc.views.session.List(),
+			sessionDetail: new prdc.views.session.Show()
 		});
 		
          var  speakersTab = {
@@ -40,7 +41,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
                 iconCls: 'time',
     			scroll: 'vertical',
 				controller: prdc.controllers.SessionController,
-				items: [ prdc.views.sessionsView]
+				items: [ prdc.views.sessionsView, prdc.views.sessionDetail]
             };
             
        var tweetsTab = {

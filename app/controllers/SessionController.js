@@ -1,8 +1,12 @@
 prdc.controllers.SessionController = new Ext.Controller ({
 	Index: function(param){
-		// var speakerid = param.speakerId;
-	    // var d = new	prdc.views.session.List({filter:{'speakers':/\b49\b/}});
-		// d.filter ={'speaker':new RegExp('/\b'+speakerid+'\b/')};
+		sessionStore.clearFilter();
+		if (param.filter){
+				for(var field in param.filter){
+					sessionStore.filter(field,param.filter[field],true);
+				}			
+		}
+		prdc.views.viewport.setActiveItem(1);
 	},
 	
 	Show: function(param) {

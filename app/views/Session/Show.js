@@ -1,9 +1,9 @@
 prdc.views.session.Show = Ext.extend(Ext.Panel, {
     scroll: 'vertical',
+	tpl: prdc.views.Templates.sessionDetail,
     initComponent: function(){
         this.dockedItems = [{
             xtype: 'toolbar',
-            title: this.record.name,
             items: [{
 						ui: 'back',
 						text: 'Back',
@@ -20,12 +20,6 @@ prdc.views.session.Show = Ext.extend(Ext.Panel, {
 						}
 			}]
 		}];
-
-        this.items = [{
-            styleHtmlContent: true,
-            tpl: prdc.views.Templates.sessionDetail,
-            data: this.record
-        }];
 
         prdc.views.session.Show.superclass.initComponent.call(this);
     }
