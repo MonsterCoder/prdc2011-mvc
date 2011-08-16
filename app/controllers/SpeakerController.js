@@ -4,14 +4,16 @@ prdc.controllers.SpeakerController = new Ext.Controller({
 			},
 			
 			Show: function(param) {
-				speaker = param.selecteditem.data;
-				Ext.apply(prdc.views.speakerDetail, {
-					prevCard: this.listpanel,
-					record: speaker
-				});
+				if (param.selecteditem) {
+					speaker = param.selecteditem.data;
+					Ext.apply(prdc.views.speakerDetail, {
+						prevCard: this.listpanel,
+						record: speaker
+					});
 
-				prdc.views.speakerDetail.update(speaker);
-				
+					prdc.views.speakerDetail.update(speaker);
+				}
+				prdc.views.viewport.setActiveItem(0)
 				param.tabcard.setActiveItem(1);
 			}
 });

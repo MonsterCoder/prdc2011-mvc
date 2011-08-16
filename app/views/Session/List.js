@@ -2,7 +2,19 @@
 prdc.views.session.List = Ext.extend(Ext.Panel, {
     dockedItems: [{
         xtype: 'toolbar',
-        title: 'Sessions'
+        title: "Sessions",
+		items: [{
+						ui: 'back',
+						text: 'Back',
+						scope: this,
+						handler: function(){
+							Ext.dispatch({
+								controller: prdc.controllers.SpeakerController,
+								action: 'Show',
+								tabcard: prdc.views.speakersView.ownerCt
+							});	
+						}
+			}]
     }],
 
     items: [{
@@ -24,6 +36,7 @@ prdc.views.session.List = Ext.extend(Ext.Panel, {
     initComponent: function() {
         prdc.views.session.List.superclass.initComponent.apply(this, arguments);        
     }
+	
 });
 
  Ext.reg('sessions', prdc.views.session.List); 

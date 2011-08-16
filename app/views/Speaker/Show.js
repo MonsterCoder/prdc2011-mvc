@@ -24,7 +24,8 @@ prdc.views.speaker.Show = Ext.extend(Ext.Panel, {
 								            Ext.dispatch({
 												controller: prdc.controllers.SessionController,
 												action: 'Index',
-												filter: {'speakers': this.record.id}
+												filter: {'speakers': this.record.id},
+												speaker: this.record.name
 											});
 							}
 					}]
