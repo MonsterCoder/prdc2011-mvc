@@ -1,0 +1,56 @@
+
+.smallPic
+{
+	float:left;
+	margin-right:10px;
+	width:60px;
+	height:74px;
+}
+
+.pic
+{
+	margin-left:10px;
+	margin-right:5px;
+	margin-bottom:-5px;
+	float:left;
+}
+h2
+{
+	color:#004373;
+	font-size:125%;
+	font-family: arial, helvetica, verdana, 'sans serif';
+}
+
+ol.icons
+{
+	
+	position: relative;
+	margin-top:4px;
+	width: 36px;
+}
+
+.x-scroller
+{
+	background-color:#C7EAFB;
+}
+
+.title
+{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.article
+{
+
+	margin-left:10px;
+	margin-right:10px;
+	
+}
+.article:first-letter
+{
+font-size:200%;
+color:#8A2BE2;
+text-align:center;
+
+}
