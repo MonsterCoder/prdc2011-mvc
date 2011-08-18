@@ -8,7 +8,11 @@ prdc.controllers.SessionController = new Ext.Controller ({
 				}			
 				showback = true;
 		}
+
+		prdc.views.sessionList=  (prdc.views.sessionList || new prdc.views.session.List());
+		
 		prdc.views.viewport.setActiveItem(1);
+		prdc.views.viewport.getActiveItem().setActiveItem(prdc.views.sessionList);
 		
 		//hide back button
 		prdc.views.viewport.getActiveItem().getActiveItem().getDockedItems()[0].items.first().setVisible(showback);

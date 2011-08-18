@@ -8,11 +8,11 @@ prdc.views.session.List = Ext.extend(Ext.Panel, {
 						text: 'Back',
 						scope: this,
 						handler: function(){
-							Ext.dispatch({
-								controller: prdc.controllers.SpeakerController,
-								action: 'Show',
-								tabcard: prdc.views.speakersView.ownerCt
-							});	
+							prdc.views.viewport.setActiveItem(this.prevCard, {
+								type: 'slide',
+								reverse: true,
+								scope: this
+							});
 						}
 			}]
     }],

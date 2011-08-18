@@ -1,11 +1,13 @@
 prdc.controllers.SpeakerController = new Ext.Controller({
 			Index: function(param) {		
-				param.tabcard.setActiveItem(0);
+				prdc.views.speakersList = (prdc.views.speakersList || new prdc.views.speaker.List());
+				param.tabcard.setActiveItem(prdc.views.speakersList);
 			},
 			
 			Show: function(param) {
 				if (param.selecteditem) {
-					speaker = param.selecteditem.data;
+					speaker = param.selecteditem;
+					prdc.views.speakerDetail = (prdc.views.speakDetail || new prdc.views.speaker.Show());
 					Ext.apply(prdc.views.speakerDetail, {
 						prevCard: this.listpanel,
 						record: speaker
@@ -13,7 +15,6 @@ prdc.controllers.SpeakerController = new Ext.Controller({
 
 					prdc.views.speakerDetail.update(speaker);
 				}
-				prdc.views.viewport.setActiveItem(0)
-				param.tabcard.setActiveItem(1);
+				prdc.views.speakersList.ownerCt.setActiveItem(prdc.views.speakerDetail);
 			}
 });
