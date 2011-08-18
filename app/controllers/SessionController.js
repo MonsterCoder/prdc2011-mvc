@@ -13,20 +13,20 @@ prdc.controllers.SessionController = new Ext.Controller ({
 		
 		prdc.views.viewport.setActiveItem(1);
 		prdc.views.viewport.getActiveItem().setActiveItem(prdc.views.sessionList);
-		
-		//hide back button
-		prdc.views.viewport.getActiveItem().getActiveItem().getDockedItems()[0].items.first().setVisible(showback);
+		Ext.getCmp('sessionlist_back').setVisible(showback);
 	},
 	
 	Show: function(param) {
-				session = param.selecteditem.data;
-				Ext.apply(prdc.views.sessionDetail, {
-					prevCard: this.listpanel,
-					record: session
-				});
+					if (param.selecteditem) {
+					session = param.selecteditem;
+					prdc.views.sessionDetail = (prdc.views.sessionDetail || new prdc.views.session.Show());
+					Ext.apply(prdc.views.sessionDetail, {
+						prevCard: this.listpanel,
+						record: session
+					});
 
-				prdc.views.sessionDetail.update(session);
-				
-				prdc.views.viewport.getActiveItem().setActiveItem(1);
+					prdc.views.sessionDetail.update(session);
+				}
+				prdc.views.sessionList.ownerCt.setActiveItem(prdc.views.sessionDetail);
 	}
 });
