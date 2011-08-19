@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="lib/sencha-touch-1.1.0/sencha-touch.css" type="text/css" />
 	<link rel="stylesheet" href="app/templates/prdc2011.css" type="text/css" />
-	
+   
 </head>
 <body>
     <script type="text/javascript" src="lib/sencha-touch-1.1.0/sencha-touch-debug-w-comments.js"></script>
@@ -24,7 +24,8 @@
         
         <!-- Place your view files here -->
         <div id="sencha-views">
-					<textarea id="speakerDetailTpl" class="x-hidden-display">
+			<!-- Place your view template-->
+			<textarea id="speakerDetailTpl" class="x-hidden-display">
 				<h2 class="title">{name}</h2>
 				<img src="http://prairiedevcon.com/Content/imgs/speakers/{picture}" alt="{picture}" class="pic"/>
 				<p class="article">{bio}</p>
@@ -45,8 +46,8 @@
 					<img src="http://prairiedevcon.com/Content/imgs/speakers/{picture}" alt="{picture}" class="smallPic"/>
 					
 					<h2>{name}</h2>
-					<h3 style="height:25px">{location}</h3>
-				   	<a href="mailto:{email}" target="blank">
+					<h3>{location}</h3>
+				  <!-- 	<a href="mailto:{email}" target="blank">
 				   		<img alt="Icon_email" src="http://prdc.herokuapp.com/assets/icon_email-7a232483d9d3b2fa8c725156fc08f644.gif">
 				   	</a>
 				   	
@@ -60,7 +61,7 @@
 				   	
 				   	<a href="http://www.twitter.com/{twitter}" target="blank">
 				   		<img alt="Icon_twitter" src="http://prdc.herokuapp.com/assets/icon_twitter-437e4fc1780566c297a54f39bfd6e18c.gif">
-				   	</a>
+				   	</a>-->
 					
 	
 				</div>
@@ -79,6 +80,10 @@
 			<script type="text/javascript" src="app/controllers/SpeakerController.js"></script>
 			<script type="text/javascript" src="app/controllers/SessionController.js"></script>
         </div>
+
+
+	
+
     </div>
     
 </body>

@@ -1,5 +1,5 @@
 Ext.regModel('Session', {
-    fields: ['abstract', "id", "speakers","tags","title"]
+    fields: ['abstract', "id", "speakers","tags","title","speakerNames"]
 });
 
 sessionStore =  new Ext.data.JsonPStore({    
