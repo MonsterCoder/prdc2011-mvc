@@ -52,7 +52,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 						 itemId: 'tweetTab',
 						 title: 'Tweets',
 						 iconCls: 'team',
-						 hashtag: this.twitterSearch
+						 controller: prdc.controllers.TweetController
 					}]
 	}
 });

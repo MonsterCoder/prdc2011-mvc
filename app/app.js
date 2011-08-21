@@ -5,4 +5,4 @@ Ext.regApplication({
     }
 });
 
-Ext.ns('prdc', 'prdc.views','prdc.views.session', 'prdc.views.speaker')
+Ext.ns('prdc', 'prdc.views','prdc.views.session', 'prdc.views.speaker', 'prdc.views.tweet')
