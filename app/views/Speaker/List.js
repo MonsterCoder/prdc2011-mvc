@@ -7,9 +7,9 @@ prdc.views.speaker.List = Ext.extend(Ext.Panel, {
 				}],
 				items:	[{
 							xtype: 'list',
-							store: speakerStore,
 							itemTpl : prdc.views.Templates.speakerItem,
 							scroll: 'vertical',
+							store:speakerStore,
 							fullscreen: true,
 							listeners: {
 								selectionChange: function(lst, records) {
