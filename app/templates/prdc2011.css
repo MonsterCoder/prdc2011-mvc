@@ -127,3 +127,26 @@ p {
 .bio_overview h3 {
 margin: 0.8em .5em 0.2em;
 }
+
+
+.session_abstract {
+	overflow: hidden;
+	background-color: #EEE;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(2%, #ffffff), color-stop(100%, #dcdcdc));
+	background-image: linear-gradient(#ffffff,#ffffff 2%,#dcdcdc);
+	text-shadow: rgba(255, 255, 255, 0.2) 0 0.1em 0;
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #DDD;
+	padding: 0.6em;
+}
+
+.session_abstract h2 {
+	font-size: 1.5em;
+	line-height: 1;
+	text-align: center;
+}
+
+.session_abstract p {
+}
+
+
