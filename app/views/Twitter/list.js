@@ -7,22 +7,7 @@ prdc.views.tweet.List = Ext.extend(Ext.Panel, {
 				}],
 				items:	[{
 							xtype: 'list',
-							itemTpl : new Ext.XTemplate(
-											'<div id="tweet_container">',
-												'<tpl for=".">',
-													'<div class="tweet_data">',
-													'<div class="tweet_avatar">',
-														'<img width="30" height="30" src="{profile_image_url}"/>',
-													'</div>',
-													'<div class="tweet_content">',
-														'<a class="user" href="http://twitter.com/{from_user}">{from_user}</a>&nbsp;',
-														'{text}',
-													'</div>',
-													'<div class="clear"></div>',
-													'</div>',
-												'</tpl>',
-											'</div>'
-											),
+							itemTpl : prdc.views.Templates.tweet,
 							scroll: 'vertical',
 							store:tweetStore,
 							fullscreen: true

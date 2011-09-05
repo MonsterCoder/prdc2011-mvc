@@ -12,6 +12,7 @@ speakerListTpl = Ext.XTemplate.from('speakerListTpl');
 speakerDetailTpl = Ext.XTemplate.from('speakerDetailTpl');
 sessionItemTpl = Ext.XTemplate.from('sessionItemTpl');
 sessionDetailTpl = Ext.XTemplate.from('sessionDetailTpl');
+twitterTpl = Ext.XTemplate.from('twitterTpl');
 	
 
 
@@ -19,7 +20,8 @@ Ext.apply(prdc.views.Templates, {
 				speakerItem: speakerListTpl ,
 				speakerDetail: speakerDetailTpl,  	
 				sessionItem: sessionItemTpl,
-				sessionDetail: sessionDetailTpl
+				sessionDetail: sessionDetailTpl,
+				tweet: twitterTpl
 });
 
 

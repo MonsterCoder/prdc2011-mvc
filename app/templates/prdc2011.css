@@ -146,7 +146,14 @@ margin: 0.8em .5em 0.2em;
 	text-align: center;
 }
 
-.session_abstract p {
+.twitter_name {
+	font-weight: normal;
+	color: #999;
+}
+
+.tweet_content {
+	overflow: wrap;
+	color: #222;
 }
 
 
