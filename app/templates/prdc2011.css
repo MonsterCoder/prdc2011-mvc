@@ -156,4 +156,14 @@ margin: 0.8em .5em 0.2em;
 	color: #222;
 }
 
+.landing_page  {
+	margin: 1.2em ;
+	float: left;
+	width: 360px;
+	height: 300px;
+	background-repeat:no-repeat;
+background-position:center; 
+	background-size: auto;
+}
+
 
