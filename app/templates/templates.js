@@ -16,7 +16,7 @@ sessionDetailTpl = Ext.XTemplate.from('sessionDetailTpl');
 
 
 Ext.apply(prdc.views.Templates, {
-        speakerItem: speakerListTpl ,
+				speakerItem: speakerListTpl ,
 				speakerDetail: speakerDetailTpl,  	
 				sessionItem: sessionItemTpl,
 				sessionDetail: sessionDetailTpl

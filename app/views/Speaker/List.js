@@ -7,6 +7,8 @@ prdc.views.speaker.List = Ext.extend(Ext.Panel, {
 				}],
 				items:	[{
 							xtype: 'list',
+						   grouped: true,
+							indexBar: true,
 							itemTpl : prdc.views.Templates.speakerItem,
 							scroll: 'vertical',
 							store:speakerStore,

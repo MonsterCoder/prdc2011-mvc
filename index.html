@@ -25,12 +25,44 @@
         
         <!-- Place your view files here -->
         <div id="sencha-views">
+			<textarea id="speakerListTpl" class="x-hidden-display">
+					<div class="avatar" style="background-image: url(http://prdc.herokuapp.com/assets/speakers/{picture})"></div>
+					<span class="name">{name}
+						</br>
+						<span class="tertiary">{location}</span>
+					</span>
+			</textarea>
 			<!-- Place your view template-->
 			<textarea id="speakerDetailTpl" class="x-hidden-display">
-				<h2 class="title">{name}</h2>
-				<img src="http://prairiedevcon.com/Content/imgs/speakers/{picture}" alt="{picture}" class="pic"/>
-				<p class="article">{bio}</p>
-				
+				<div class="bio_overview">
+					<div class="avatar" style="background-image: url(http://prdc.herokuapp.com/assets/speakers/{picture})"></div>
+					<h3>{name}</h3>
+					
+					<span>
+						<span class="tertiary">{location}</span>
+						<a href="mailto:{email}" target="blank">
+									<img alt="Icon_email" src="lib/resource/icon_email.gif">
+								</a>
+								
+						<a href="http://{blog}" target="blank">
+									<img alt="Icon_blog" src="lib/resource/icon_blog.gif">
+								</a>
+								
+						<a href="http://{website}" target="blank">
+									<img alt="Icon_website" src="lib/resource/icon_website.gif">
+								</a>
+								
+						<a href="http://www.twitter.com/{twitter}" target="blank">
+									<img alt="Icon_twitter" src="lib/resource/icon_twitter.gif">
+								</a>
+					</span>
+				</div>
+				<div>
+					<p>
+						{bio}
+					</p>
+				</div>
+
 			</textarea>
 			<textarea id="sessionItemTpl" class="x-hidden-display">
 				<h2>{title}</h2>
@@ -41,31 +73,7 @@
 				<p class="article">{abstract}</p>
 				
 			</textarea>
-			<textarea id="speakerListTpl" class="x-hidden-display">
-				<div>
-					<img src="http://prairiedevcon.com/Content/imgs/speakers/{picture}" alt="{picture}" class="smallPic"/>
-					
-					<h2>{name}</h2>
-					<h3>{location}</h3>
-				  <!-- 	<a href="mailto:{email}" target="blank">
-				   		<img alt="Icon_email" src="http://prdc.herokuapp.com/assets/icon_email-7a232483d9d3b2fa8c725156fc08f644.gif">
-				   	</a>
-				   	
-				   	<a href="http://{blog}" target="blank">
-				   		<img alt="Icon_blog" src="http://prdc.herokuapp.com/assets/icon_blog-cf2fd204d20369a3867abfad350b602b.gif">
-				   	</a>
-				   	
-				   	<a href="http://{website}" target="blank">
-				   		<img alt="Icon_website" src="http://prdc.herokuapp.com/assets/icon_website-3042cfc2cb4eea9025e5a7981f5d81b6.gif">
-				   	</a>
-				   	
-				   	<a href="http://www.twitter.com/{twitter}" target="blank">
-				   		<img alt="Icon_twitter" src="http://prdc.herokuapp.com/assets/icon_twitter-437e4fc1780566c297a54f39bfd6e18c.gif">
-				   	</a>-->
-					
-	
-				</div>
-			</textarea>
+
 			
             <script type="text/javascript" src="app/templates/templates.js"></script>
             <script type="text/javascript" src="app/views/Speaker/list.js"></script>
