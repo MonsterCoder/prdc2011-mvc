@@ -1,12 +1,9 @@
 prdc.controllers.SpeakerController = new Ext.Controller({
 			Index: function(param) {		
 				prdc.views.speakersList = (prdc.views.speakersList || new prdc.views.speaker.List());
-				prdc.views.speakersList.update(speakerStore.data);
 				prdc.views.speakersList.doLayout();
 				var tab = Ext.getCmp('speakersTab');
-				tab.layout.ActiveItem=null;
 		        tab.setActiveItem(prdc.views.speakersList);
-		     
 		        prdc.views.viewport.setActiveItem(tab);
 			},
 			
