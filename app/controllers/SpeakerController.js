@@ -7,7 +7,7 @@ prdc.controllers.SpeakerController = new Ext.Controller({
 				tab.layout.ActiveItem=null;
 		        tab.setActiveItem(prdc.views.speakersList);
 		     
-		        
+		        prdc.views.viewport.setActiveItem(tab);
 			},
 			
 			Show: function(param) {
