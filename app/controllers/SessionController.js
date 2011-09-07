@@ -10,7 +10,10 @@ prdc.controllers.SessionController = new Ext.Controller ({
 		}
 
 		prdc.views.sessionList=  (prdc.views.sessionList || new prdc.views.session.List());
-		param.tabcard.setActiveItem(prdc.views.sessionList);
+		
+		var tab = Ext.getCmp('sessionTab');
+		tab.setActiveItem(prdc.views.sessionList);
+
 		Ext.getCmp('sessionlist_back').setVisible(showback);
 	},
 	

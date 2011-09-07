@@ -1,5 +1,6 @@
 
 prdc.views.session.List = Ext.extend(Ext.Panel, {
+    id:'sessionlist',
     items: [{
 				xtype: 'panel',
 				dockedItems: [{

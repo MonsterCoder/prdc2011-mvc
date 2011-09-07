@@ -6,6 +6,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
                 },
 				listeners: {
 					change:  function(tabbar, tab, tabcard) {
+					      
 						  Ext.dispatch({
 												controller: tabcard.controller,
 												action: 'Index',
@@ -33,7 +34,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 	buildTabs: function() {         
 		return [
 					{
-							itemId: 'homeTab',
+							id: 'homeTab',
 							title:  "Home",  
 							scroll: 'vertical',
 							iconCls: 'home',
@@ -41,7 +42,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 							xtype:'home'
 					 },     
 					{
-							itemId: 'speakersTab',
+							id: 'speakersTab',
 							title: 'Speakers',  
 							scroll: 'vertical',
 							iconCls: 'user',
@@ -49,7 +50,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 							controller: prdc.controllers.SpeakerController
 					 },     
 					{
-						itemId: 'sessionTab',
+						id: 'sessionTab',
 						title: 'Sessions',
 						iconCls: 'time',
 						scroll: 'vertical',
@@ -57,7 +58,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 						controller: prdc.controllers.SessionController
 					},         
 					{
-						 itemId: 'tweetTab',
+						 id: 'tweetTab',
 						 title: 'Tweets',
 						 iconCls: 'team',
 						 layout: 'card',

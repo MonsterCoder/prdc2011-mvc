@@ -1,4 +1,5 @@
 prdc.views.speaker.List = Ext.extend(Ext.Panel, {
+    id:'speakerlist',
     items: [{
 				xtype: 'panel',
 				dockedItems: [{

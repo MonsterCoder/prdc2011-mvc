@@ -1,4 +1,5 @@
 prdc.views.session.Show = Ext.extend(Ext.Panel, {
+    id:'sessiondetail',
     scroll: 'vertical',
 	tpl: prdc.views.Templates.sessionDetail,
     initComponent: function(){

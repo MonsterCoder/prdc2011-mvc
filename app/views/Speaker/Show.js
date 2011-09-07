@@ -1,4 +1,5 @@
 prdc.views.speaker.Show = Ext.extend(Ext.Panel, {
+    id:'speakerdetail',
     scroll: 'vertical',
 	tpl: prdc.views.Templates.speakerDetail,
     initComponent: function(){
