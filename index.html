@@ -1,59 +1,59 @@
 <!doctype html>
 <html>
 <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+		<meta name='apple-mobile-web-app-capable' content='yes' />
+		<meta names='apple-mobile-web-app-status-bar-style' content='black-translucent' />
 		<title>PRDC 2011</title>
     
-    <link rel="stylesheet" href="lib/sencha-touch-1.1.0/sencha-touch.css" type="text/css" />
-	<link rel="stylesheet" href="app/templates/prdc2011.css" type="text/css" />
+    <link rel='stylesheet' href='lib/sencha-touch-1.1.0/sencha-touch.css' type='text/css' />
+	<link rel='stylesheet' href='app/templates/prdc2011.css' type='text/css' />
    
 </head>
 <body>
-    <script type="text/javascript" src="lib/sencha-touch-1.1.0/sencha-touch-debug-w-comments.js"></script>
+    <script type='text/javascript' src='lib/sencha-touch-1.1.0/sencha-touch-debug-w-comments.js'></script>
     
-    <div id="sencha-app">
-        <script type="text/javascript" src="app/app.js"></script>
+    <div id='sencha-app'>
+        <script type='text/javascript' src='app/app.js'></script>
         
         <!-- Place your model files here -->
-        <div id="sencha-models">
-             <script type="text/javascript" src="app/models/Speaker.js"></script>
-			 <script type="text/javascript" src="app/models/Session.js"></script>
-			 <script type="text/javascript" src="app/models/Stores.js"></script>
+        <div id='sencha-models'>
+             <script type='text/javascript' src='app/models/Speaker.js'></script>
+			 <script type='text/javascript' src='app/models/Session.js'></script>
+			 <script type='text/javascript' src='app/models/Stores.js'></script>
         </div>
         
         <!-- Place your view files here -->
-        <div id="sencha-views">
-			<textarea id="speakerListTpl" class="x-hidden-display">
-					<div class="avatar" style="background-image: url(http://prdc.herokuapp.com/assets/speakers/{picture})"></div>
-					<span class="name">{name}
+        <div id='sencha-views'>
+			<textarea id='speakerListTpl' class='x-hidden-display'>
+					<div class='avatar' style='background-image: url(http://prdc.herokuapp.com/assets/speakers/{picture})'></div>
+					<span class='name'>{name}
 						</br>
-						<span class="tertiary">{location}</span>
+						<span class='tertiary'>{location}</span>
 					</span>
 			</textarea>
 			<!-- Place your view template-->
-			<textarea id="speakerDetailTpl" class="x-hidden-display">
-				<div class="bio_overview">
-					<div class="avatar" style="background-image: url(http://prdc.herokuapp.com/assets/speakers/{picture})"></div>
+			<textarea id='speakerDetailTpl' class='x-hidden-display'>
+				<div class='bio_overview'>
+					<div class='avatar' style='background-image: url(http://prdc.herokuapp.com/assets/speakers/{picture})'></div>
 					<h3>{name}</h3>
 					
 					<span>
-						<span class="tertiary">{location}</span>
-						<a href="mailto:{email}" target="blank">
-									<img alt="Icon_email" src="lib/resource/icon_email.gif">
+						<span class='tertiary'>{location}</span>
+						<a href='mailto:{email}' target='blank'>
+									<img alt='Icon_email' src='lib/resource/icon_email.gif'>
 								</a>
 								
-						<a href="http://{blog}" target="blank">
-									<img alt="Icon_blog" src="lib/resource/icon_blog.gif">
+						<a href='http://{blog}' target='blank'>
+									<img alt='Icon_blog' src='lib/resource/icon_blog.gif'>
 								</a>
 								
-						<a href="http://{website}" target="blank">
-									<img alt="Icon_website" src="lib/resource/icon_website.gif">
+						<a href='http://{website}' target='blank'>
+									<img alt='Icon_website' src='lib/resource/icon_website.gif'>
 								</a>
 								
-						<a href="http://www.twitter.com/{twitter}" target="blank">
-									<img alt="Icon_twitter" src="lib/resource/icon_twitter.gif">
+						<a href='http://www.twitter.com/{twitter}' target='blank'>
+									<img alt='Icon_twitter' src='lib/resource/icon_twitter.gif'>
 								</a>
 					</span>
 				</div>
@@ -64,44 +64,44 @@
 				</div>
 
 			</textarea>
-			<textarea id="sessionItemTpl" class="x-hidden-display">
+			<textarea id='sessionItemTpl' class='x-hidden-display'>
 				<h2>{title}</h2>
 				
 			</textarea>
-			<textarea id="sessionDetailTpl" class="x-hidden-display">
-				<div class="session_abstract">
-					<h2 class="name">{title}</h2>
+			<textarea id='sessionDetailTpl' class='x-hidden-display'>
+				<div class='session_abstract'>
+					<h2 class='name'>{title}</h2>
 					
 				</div>
 				<p>{abstract}</p>
 				
 			</textarea>
-			<textarea id="twitterTpl" class="x-hidden-display">
+			<textarea id='twitterTpl' class='x-hidden-display'>
 		
-					<div class="avatar" style="background-image: url({profile_image_url})"></div>
-					<span class="twitter_name">
-						<a href="http://twitter.com/{from_user}">{from_user}</a>&nbsp;
+					<div class='avatar' style='background-image: url({profile_image_url})'></div>
+					<span class='twitter_name'>
+						<a href='http://twitter.com/{from_user}'>{from_user}</a>&nbsp;
 						</br>
-						<span class="tweet_content">{text}</span>
+						<span class='tweet_content'>{text}</span>
 					</span>																																						
 			
 			</textarea>
 			
-            <script type="text/javascript" src="app/templates/templates.js"></script>
-            <script type="text/javascript" src="app/views/Speaker/list.js"></script>
-			<script type="text/javascript" src="app/views/Speaker/show.js"></script>
-			<script type="text/javascript" src="app/views/Session/list.js"></script>
-			<script type="text/javascript" src="app/views/Session/show.js"></script>
-			<script type="text/javascript" src="app/views/Twitter/list.js"></script>
-            <script type="text/javascript" src="app/views/Viewport.js"></script>
-            <script type="text/javascript" src="app/views/home/home.js"></script>
+            <script type='text/javascript' src='app/templates/templates.js'></script>
+            <script type='text/javascript' src='app/views/Speaker/List.js'></script>
+			      <script type='text/javascript' src='app/views/Speaker/Show.js'></script>
+			      <script type='text/javascript' src='app/views/Session/List.js'></script>
+			      <script type='text/javascript' src='app/views/Session/Show.js'></script>
+			      <script type='text/javascript' src='app/views/Twitter/list.js'></script>
+            <script type='text/javascript' src='app/views/Viewport.js'></script>
+            <script type='text/javascript' src='app/views/Home/home.js'></script>
         </div>
         
         <!-- Place your controller files here -->
-        <div id="sencha-controllers">
-			<script type="text/javascript" src="app/controllers/SpeakerController.js"></script>
-			<script type="text/javascript" src="app/controllers/SessionController.js"></script>
-			<script type="text/javascript" src="app/controllers/TweetController.js"></script>
+        <div id='sencha-controllers'>
+			<script type='text/javascript' src='app/controllers/SpeakerController.js'></script>
+			<script type='text/javascript' src='app/controllers/SessionController.js'></script>
+			<script type='text/javascript' src='app/controllers/TweetController.js'></script>
         </div>
 
 
