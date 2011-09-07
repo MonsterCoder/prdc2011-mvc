@@ -36,10 +36,9 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 					{
 							id: 'homeTab',
 							title:  "Home",  
-							scroll: 'vertical',
+							cls: 'landing_page',
 							iconCls: 'home',
 							layout: 'card',
-							xtype:'home'
 					 },     
 					{
 							id: 'speakersTab',
