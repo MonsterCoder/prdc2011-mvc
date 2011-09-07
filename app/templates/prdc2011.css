@@ -11,20 +11,18 @@ body {
 	font-weight: normal;
 	-webkit-user-select: auto;
 	-webkit-touch-callout: inherit;
-	line-height: 1.5;
+	line-height: 1;
 	color: #333;
-	font-size: .8em;
-	padding: 1.2em 1.2em 1.2em;
+	font-size: .6em;
+	padding: 1em;
 }
 
  h3 {
-	font-size: 1.5em;
-	line-height: 1;
+	font-size: 1.2em;
 }
 
 h4 {
-	font-size: 1.1em;
-	line-height: 1.1em;
+	font-size: 0.9em;
 	color: #999;
 
 }
@@ -34,8 +32,8 @@ p {
 	-webkit-margin-after: 1em;
 	-webkit-margin-start: 0px;
 	-webkit-margin-end: 0px;
-	margin-left:1.5em;
-	margin-right:1.5em;
+	margin-left:1em;
+	margin-right:1em;
 }
 
 .avatar {
@@ -44,7 +42,7 @@ p {
 		-webkit-border-radius: 0.5em;
 		border-radius: 0.5em;
 		-webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
-		margin-right: 10px;
+		margin-right: 8px;
 		width: 45px;
 		height: 45px;
 		background-size: 47px auto;
@@ -78,22 +76,31 @@ p {
 .x-list .x-list-item {
 	position: relative;
 	color: black;
-	padding: 0.5em 0.8em;
-	min-height: 2.6em;
+	padding-right:3em;
+	min-height: 2em;
 	display: -webkit-box;
 	display: box;
 	border-top: 1px solid #D1D1D1;
 }
 
 .x-list .x-list-item .x-list-item-body span {
-	font-size: .95em;
+    margin-right: 20px;
+	font-size: .9em;
+}
+.x-list .x-list-item .x-list-item-body .tweet_content {
+    padding-right: 20px;
+	font-size: 0.9em;
+}
+
+.x-list .x-list-item .x-list-item-body h2 {
+    font-size: 0.9em;
 }
 
 .x-list-item-body .name {
 	-webkit-box-flex: 1;
 	box-flex: 1;
 	font-weight: bold;
-	font-size: 1.4em;
+	font-size: 1.1em;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: block;
@@ -117,7 +124,7 @@ p {
 	border-top: 1px solid #DDD;
 }
 .bio_overview .avatar {
-	margin: 1.2em .9em 1.2em;
+	margin: 1em;
 	float: left;
 	width: 60px;
 	height: 60px;
@@ -125,9 +132,8 @@ p {
 }
 
 .bio_overview h3 {
-margin: 0.8em .5em 0.2em;
+        margin: 0.8em .5em 0.2em;
 }
-
 
 .session_abstract {
 	overflow: hidden;
@@ -141,7 +147,7 @@ margin: 0.8em .5em 0.2em;
 }
 
 .session_abstract h2 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	line-height: 1;
 	text-align: center;
 }
@@ -159,7 +165,7 @@ margin: 0.8em .5em 0.2em;
 .landing_page  {
 	margin: 1.2em ;
 	float: left;
-	width: 360px;
+	width: 300px;
 	height: 300px;
 	background-repeat:no-repeat;
 	background-size: auto;
