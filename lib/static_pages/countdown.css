@@ -1,0 +1,36 @@
+			body {
+				background: #C9C9C9;
+			}
+			#countdown {
+				margin: 0 auto;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+			#countdown img.ball {
+				width: 5px;
+				height: 5px;
+				position: absolute;
+			}
+			#canvas-content {
+				float: center;
+				width: 300px;
+				z-index: 99;
+				position: relative;
+				text-align: -webkit-center;
+			}
+			#content {
+				padding: 5px;
+				background: #FFF;
+				width: 320px;
+				margin: 20px auto 100px auto;
+				-moz-box-shadow: 0 0 6px #c6c6c6;
+				-webkit-box-shadow: 0 0 6px #c6c6c6;
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				border-radius: 4px 4px 4px 4px;
+				overflow: auto;
+				z-index: 10;
+				position: relative;
+			}
