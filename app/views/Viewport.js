@@ -66,7 +66,7 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 					{
 							id: 'aboutTab',
 							title:  "About",  
-							iconCls: 'about',
+							iconCls: 'info',
 							layout: 'card',
 							xtype: 'about'
 					 }
