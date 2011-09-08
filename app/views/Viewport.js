@@ -62,7 +62,14 @@ prdc.views.Viewport = Ext.extend(Ext.TabPanel, {
 						 iconCls: 'team',
 						 layout: 'card',
 						 controller: prdc.controllers.TweetController
-					}
+					},
+					{
+							id: 'aboutTab',
+							title:  "About",  
+							iconCls: 'about',
+							layout: 'card',
+							xtype: 'about'
+					 }
 					]
 	}
 });
