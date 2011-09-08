@@ -2,9 +2,11 @@ prdc.controllers.SpeakerController = new Ext.Controller({
 			Index: function(param) {		
 				prdc.views.speakersList = (prdc.views.speakersList || new prdc.views.speaker.List());
 				prdc.views.speakersList.doLayout();
+				
 				var tab = Ext.getCmp('speakersTab');
 		        tab.setActiveItem(prdc.views.speakersList);
 				tab.doLayout();
+				
 		        prdc.views.viewport.setActiveItem(tab);
 				prdc.views.viewport.doLayout();
 			},
@@ -19,7 +21,9 @@ prdc.controllers.SpeakerController = new Ext.Controller({
 					});
 
 					prdc.views.speakerDetail.update(speaker);
+					prdc.views.speakerDetail.doLayout();
 				}
 				prdc.views.speakersList.ownerCt.setActiveItem(prdc.views.speakerDetail);
+				prdc.views.viewport.doLayout();
 			}
 });

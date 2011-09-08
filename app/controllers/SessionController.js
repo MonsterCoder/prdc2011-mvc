@@ -14,9 +14,11 @@ prdc.controllers.SessionController = new Ext.Controller ({
 		
 		var tab = Ext.getCmp('sessionTab');
 		tab.setActiveItem(prdc.views.sessionList);
-        
+        tab.doLayout();
+		
         prdc.views.viewport.setActiveItem(tab);
 		Ext.getCmp('sessionlist_back').setVisible(showback);
+		prdc.views.viewport.doLayout();
 	},
 	
 	Show: function(param) {
@@ -29,7 +31,9 @@ prdc.controllers.SessionController = new Ext.Controller ({
 					});
 
 					prdc.views.sessionDetail.update(session);
+					prdc.views.sessionDetail.doLayout();
 				}
 				prdc.views.sessionList.ownerCt.setActiveItem(prdc.views.sessionDetail);
+				prdc.views.viewport.doLayout();
 	}
 });
