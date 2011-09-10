@@ -15,9 +15,9 @@ speakerStore =  new Ext.data.JsonPStore({
             type: 'json',
             root: 'speakers'
         } ,   
-		sorters:'name',
+		sorters:'last_name',
 		getGroupString: function(r){
-			return r.get('name')[0]
+			return r.get('last_name')[0]
 		},
         autoLoad: true 
  }); 

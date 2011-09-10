@@ -27,7 +27,7 @@
         <div id='sencha-views'>
 			<textarea id='speakerListTpl' class='x-hidden-display'>
 					<div class='avatar' style='background-image: url(http://prdc.herokuapp.com/assets/speakers/{picture})'></div>
-					<span class='name'>{name}
+					<span class='name'>{first_name} {last_name}
 						</br>
 						<span class='tertiary'>{location}</span>
 					</span>
@@ -36,7 +36,7 @@
 			<textarea id='speakerDetailTpl' class='x-hidden-display'>
 				<div class='bio_overview'>
 					<div class='avatar' style='background-image: url(http://prdc.herokuapp.com/assets/speakers/{picture})'></div>
-					<h3>{name}</h3>
+					<h3>{first_name} {last_name}</h3>
 					
 					<span>
 						<span class='tertiary'>{location}</span>
