@@ -1,5 +1,6 @@
 prdc.views.home = Ext.extend(Ext.Panel, {
-	 html: "<iframe frameborder='0' src=lib/static_pages/countdown.html width='100%' height='100%' id='iframe-external'></iframe>",
+	 cls:'hello', 
+	 title:'welcome',
 	 dockedItems: [{
 					xtype: 'toolbar',
 					title: 'PRDC2011'}]
